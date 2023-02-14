@@ -1,0 +1,26 @@
+.button {
+  @include button-style;
+
+  &--submit {
+    padding-top: 18px;
+    padding-bottom: 14px;
+    background-color: $bg-second;
+    color: #ffffff;
+
+    @media (min-width: $tablet-width-min) {
+      flex-basis: 50%;
+    }
+  }
+
+  &--popup {
+    padding-top: 18px;
+    padding-bottom: 14px;
+    background-color: $bg-second;
+    color: #ffffff;
+  }
+
+  &--player {
+    line-height: 0;
+    background-color: transparent;
+  }
+}

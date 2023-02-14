@@ -1,0 +1,12 @@
+.text-description {
+  @include text-description;
+  text-align: center;
+
+  &--promo {
+    line-height: 26px;
+  }
+
+  &--sub {
+    line-height: 24px;
+  }
+}

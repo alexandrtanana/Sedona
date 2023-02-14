@@ -1,0 +1,36 @@
+.likes {
+  display: flex;
+}
+
+.likes__counter {
+  font-weight: $weight-bold;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #000000;
+
+  @media (min-width: $desktop-width-min) {
+    color: #ffffff;
+  }
+}
+
+.likes__icon {
+  margin-right: 14px;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width-min) {
+    margin-right: 10px;
+  }
+}
+
+.likes__icon-img {
+  width: 23px;
+  height: 21px;
+
+  @media (min-width: $desktop-width-min) {
+    path {
+      opacity: 1;
+      fill: #ffffff;
+    }
+  }
+}

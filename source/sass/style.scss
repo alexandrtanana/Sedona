@@ -1,0 +1,61 @@
+// Начните писать стили здесь
+
+// ABSTRACT
+@import "_variables.scss";
+@import "_mixins.scss";
+
+// BASE
+@import "base/normalize";
+@import "base/fonts.scss";
+@import "base/visually-hidden.scss";
+@import "base/hidden.scss";
+@import "base/text-title.scss";
+@import "base/text-description.scss";
+@import "base/text-copyright.scss";
+
+// LAYOUT
+// global
+@import "layout/page.scss";
+@import "layout/page-header.scss";
+@import "layout/button-burger.scss";
+@import "layout/button-cross.scss";
+@import "layout/main-nav.scss";
+@import "layout/site-list.scss";
+@import "layout/page-main.scss";
+@import "layout/page-intro.scss";
+@import "layout/page-footer.scss";
+@import "layout/social.scss";
+@import "layout/copyright.scss";
+
+
+// main page
+@import "layout/index/intro.scss";
+@import "layout/index/advantages.scss";
+@import "layout/index/advantage.scss";
+@import "layout/index/detail.scss";
+@import "layout/index/detail-icon.scss";
+@import "layout/index/booking.scss";
+@import "layout/index/map.scss";
+
+// gallery page
+@import "layout/photo/gallery.scss";
+@import "layout/photo/photo-card.scss";
+@import "layout/photo/card-info.scss";
+@import "layout/photo/likes.scss";
+@import "layout/photo/video.scss";
+@import "layout/photo/player.scss";
+
+// form page
+@import "layout/form/review.scss";
+@import "layout/form/review-form.scss";
+@import "layout/form/form-group";
+@import "layout/form/field.scss";
+@import "layout/form/field-invalid.scss";
+@import "layout/form/field-icon.scss";
+@import "layout/form/popup.scss";
+
+
+// COMPONENTS
+@import "components/button.scss";
+@import "components/label";
+@import "components/select.scss";

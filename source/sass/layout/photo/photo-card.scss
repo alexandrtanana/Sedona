@@ -1,0 +1,64 @@
+//* // фон цвет для всего блока с фотографией
+.photo-card {
+  background-color: $bg-main;
+
+  @media (min-width: $tablet-width-min) {
+    background-color: #f2f2f2;
+
+    //* // выделение нечетных по цвету, кроме первого
+    &:nth-child(odd) {
+      background-color: #eaeaea;
+    }
+
+    &:first-child {
+      background-color: #f2f2f2;
+    }
+  }
+}
+
+.photo-card__img {
+  width: 100%;
+  max-width: 100%;
+  height: 280px;
+  //*pixel-perfect
+  margin-bottom: 6px;
+
+  @media (min-width: $tablet-width-min) {
+    height: 267px;
+    margin: 0;
+    object-fit: cover;
+  }
+
+  &--main {
+    @media (min-width: $tablet-width-min) {
+      height: 400px;
+    }
+  }
+}
+
+.photo-card__info {
+  margin: 0 20px;
+  margin-bottom: 10px;
+  align-self: flex-start;
+
+  @media (min-width: $tablet-width-min) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: auto;
+    margin: 0;
+    padding: 14px 29px 14px 20px;
+
+    &--sunset {
+      padding-right: 20px;
+    }
+
+    &--roads {
+      padding-right: 35px;
+    }
+  }
+
+  @media (min-width: $desktop-width-min) {
+    margin-top: -80px;
+  }
+}

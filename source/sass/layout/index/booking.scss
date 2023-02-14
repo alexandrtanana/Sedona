@@ -1,0 +1,86 @@
+.booking__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  margin: 33px auto 49px;
+
+  @media (min-width: $tablet-width-min) {
+    max-width: 458px;
+    padding: 0;
+    margin-top: 57px;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width-min) {
+    margin-top: 58px;
+    margin-bottom: 66px;
+  }
+}
+
+.booking__header {
+  margin-bottom: 27px;
+
+  @media (min-width: $tablet-width-min) {
+    margin-bottom: 37px;
+  }
+
+  @media (min-width: $desktop-width-min) {
+    margin-bottom: 42px;
+  }
+}
+
+.booking__title {
+  margin-top: 0;
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet-width-min) {
+    //*pixel-perfect
+    margin-bottom: 36px;
+    font-size: $font-size-wide-screen;
+  }
+
+  @media (min-width: $desktop-width-min) {
+    // margin-bottom: 26px;
+    //*pixel-perfect
+    margin-bottom: 36px;
+  }
+}
+
+.booking__text {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @media (max-width: 767px) {
+    br {
+      display: none;
+    }
+  }
+}
+
+.booking__link {
+  padding-top: 15px;
+  padding-bottom: 17px;
+  border: none;
+  font-weight: $weight-bold;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  color: #ffffff;
+  background-color: $bg-second;
+
+  &:hover {
+    background-color: $bg-hover;
+  }
+
+  &:active {
+    background-color: $bg-active;
+    color: rgba(225, 225, 225, 0.3);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
+}
